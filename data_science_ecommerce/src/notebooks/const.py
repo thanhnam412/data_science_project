@@ -1,0 +1,1 @@
+name_mapping = {0: "Lumpy", 1: "Smooth", 2: "Intermittent"}
