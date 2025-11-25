@@ -3,7 +3,13 @@
 import type React from "react";
 
 import { useState, useCallback } from "react";
-import { Upload, FileSpreadsheet, X, CheckCircle2 } from "lucide-react";
+import {
+  Upload,
+  FileSpreadsheet,
+  X,
+  CheckCircle2,
+  ArrowRight,
+} from "lucide-react";
 import {
   Card,
   CardContent,
@@ -12,6 +18,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 interface UploadedFile {
   name: string;
@@ -188,6 +195,14 @@ export default function DatasetUploadPage() {
                     </Button>
                   </div>
                 ))}
+              </div>
+              <div className="mt-4 flex justify-end">
+                <Button asChild>
+                  <Link href="/detail">
+                    View Workflow
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
+                </Button>
               </div>
             </CardContent>
           </Card>
