@@ -1,0 +1,10 @@
+artifact_location: file:///D:/doan_khdl/data_science_project/mlruns/987173263464640132/models/m-73f20b46057f4850a7df8fb74c5c634b/artifacts
+creation_timestamp: 1763990817576
+experiment_id: '987173263464640132'
+last_updated_timestamp: 1763990820246
+model_id: m-73f20b46057f4850a7df8fb74c5c634b
+model_type: null
+name: model_qty
+source_run_id: 6945d42a1be74bc58d3c28fe7545faec
+status: 2
+status_message: null

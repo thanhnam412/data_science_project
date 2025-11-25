@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/doan_khdl/data_science_project/mlruns/987173263464640132/5c93eb665d64405db40ad8c8546b7f4d/artifacts
+end_time: 1764081381418
+entry_point_name: ''
+experiment_id: '987173263464640132'
+lifecycle_stage: active
+run_id: 5c93eb665d64405db40ad8c8546b7f4d
+run_name: LGBM_Run_Direct
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764081330942
+status: 3
+tags: []
+user_id: user

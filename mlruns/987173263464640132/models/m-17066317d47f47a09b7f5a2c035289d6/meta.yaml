@@ -1,0 +1,10 @@
+artifact_location: file:///D:/doan_khdl/data_science_project/mlruns/987173263464640132/models/m-17066317d47f47a09b7f5a2c035289d6/artifacts
+creation_timestamp: 1764081338077
+experiment_id: '987173263464640132'
+last_updated_timestamp: 1764081377089
+model_id: m-17066317d47f47a09b7f5a2c035289d6
+model_type: null
+name: model_interval
+source_run_id: 5c93eb665d64405db40ad8c8546b7f4d
+status: 2
+status_message: null
