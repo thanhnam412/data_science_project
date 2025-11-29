@@ -19,6 +19,7 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { usePostFile } from "@/tanstack/file";
 
 interface UploadedFile {
   name: string;
@@ -30,6 +31,7 @@ interface UploadedFile {
 export default function DatasetUploadPage() {
   const [isDragging, setIsDragging] = useState(false);
   const [uploadedFiles, setUploadedFiles] = useState<UploadedFile[]>([]);
+  const { mutateAsync: postFile } = usePostFile();
 
   const validateFile = (file: File) => {
     const validTypes = [
@@ -102,6 +104,10 @@ export default function DatasetUploadPage() {
     const sizes = ["Bytes", "KB", "MB", "GB"];
     const i = Math.floor(Math.log(bytes) / Math.log(k));
     return Math.round((bytes / Math.pow(k, i)) * 100) / 100 + " " + sizes[i];
+  };
+
+  const onPost = async () => {
+    await postFile({ type_file: "name" });
   };
 
   return (
@@ -203,6 +209,7 @@ export default function DatasetUploadPage() {
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
+                <Button onClick={onPost}>Click</Button>
               </div>
             </CardContent>
           </Card>
